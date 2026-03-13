@@ -5,7 +5,7 @@ const ramenData = [
         spice: "spicy",
         rating: 4.8,
         description: "The most famous Korean ramen with rich spicy flavor and chewy noodles.",
-        image: "https://image.nongshim.com/non/pro/1653457953255.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Shin_Ramyun_Pack.png/640px-Shin_Ramyun_Pack.png"
     },
     {
         name: "Buldak Bokkeum Myeon",
@@ -13,7 +13,7 @@ const ramenData = [
         spice: "extreme",
         rating: 4.7,
         description: "Viral Korean fire noodle challenge ramen. No soup, just intense heat.",
-        image: "https://www.samyangfoods.com/upload/product/202107/20210722104523311021.png"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Samyang_Buldak_Bokkeum_Myeon.jpg/640px-Samyang_Buldak_Bokkeum_Myeon.jpg"
     },
     {
         name: "Jin Ramen (Mild)",
@@ -21,7 +21,7 @@ const ramenData = [
         spice: "mild",
         rating: 4.4,
         description: "Balanced flavor loved by many Koreans. Great for those who prefer less heat.",
-        image: "https://ottogi.co.kr/pds/product/2023-05-18_723303666.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Jin_Ramen_Mild.png/640px-Jin_Ramen_Mild.png"
     },
     {
         name: "Neoguri",
@@ -29,7 +29,7 @@ const ramenData = [
         spice: "spicy",
         rating: 4.5,
         description: "Famous for thick, udon-style noodles and a real piece of kelp inside.",
-        image: "https://image.nongshim.com/non/pro/1653460490722.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Nongshim_Neoguri.png/640px-Nongshim_Neoguri.png"
     },
     {
         name: "Samyang Ramen",
@@ -37,7 +37,7 @@ const ramenData = [
         spice: "medium",
         rating: 4.2,
         description: "Korea’s first instant ramen. Features a nostalgic, savory ham flavor.",
-        image: "https://www.samyangfoods.com/upload/product/202107/20210721163457173001.png"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Samyang_Ramyun.png/640px-Samyang_Ramyun.png"
     },
     {
         name: "Jjapaghetti",
@@ -45,7 +45,7 @@ const ramenData = [
         spice: "mild",
         rating: 4.9,
         description: "Sweet and savory black bean noodles. A must-try non-spicy option.",
-        image: "https://image.nongshim.com/non/pro/1653458285521.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Nongshim_Chapagetti.png/640px-Nongshim_Chapagetti.png"
     },
     {
         name: "Paldo Bibimmyeon",
@@ -53,7 +53,7 @@ const ramenData = [
         spice: "medium",
         rating: 4.6,
         description: "Served cold! Perfect for summer with a refreshing apple-infused spicy sauce.",
-        image: "https://paldofood.co.kr/pds/product/2021-03-24_112001.png"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Paldo_Bibim_Men.png/640px-Paldo_Bibim_Men.png"
     },
     {
         name: "Ansungtangmyun",
@@ -61,7 +61,7 @@ const ramenData = [
         spice: "medium",
         rating: 4.3,
         description: "Known for its 'comfortable' taste. Great for adding your own ingredients.",
-        image: "https://image.nongshim.com/non/pro/1653459146592.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Nongshim_Ansungtangmyun.png/640px-Nongshim_Ansungtangmyun.png"
     },
     {
         name: "Yukgaejang (Cup)",
@@ -69,7 +69,7 @@ const ramenData = [
         spice: "medium",
         rating: 4.5,
         description: "The best-selling cup ramen in Korea. Famous for its thin, springy noodles.",
-        image: "https://image.nongshim.com/non/pro/1653459846383.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Nongshim_Yukgaejang_Cup.png/640px-Nongshim_Yukgaejang_Cup.png"
     },
     {
         name: "Sesame Ramen",
@@ -77,7 +77,7 @@ const ramenData = [
         spice: "spicy",
         rating: 4.7,
         description: "Comes with a savory sesame oil and an egg block for a rich, nutty flavor.",
-        image: "https://ottogi.co.kr/pds/product/2023-05-18_722830846.jpg"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Ottogi_Sesame_Ramen.png/640px-Ottogi_Sesame_Ramen.png"
     }
 ];
 
