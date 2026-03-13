@@ -103,8 +103,10 @@ header h1 {
 
 .ramen-card img {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    height: 220px;
+    object-fit: contain;
+    background-color: #fff;
+    padding: 10px;
 }
 
 .card-content {

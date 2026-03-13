@@ -4,40 +4,80 @@ const ramenData = [
         flavor: "Spicy beef broth",
         spice: "spicy",
         rating: 4.8,
-        description: "The most famous Korean ramen with rich spicy flavor.",
-        image: "https://images.unsplash.com/photo-1591814448473-7f47c215c2c0?auto=format&fit=crop&q=80&w=800"
+        description: "The most famous Korean ramen with rich spicy flavor and chewy noodles.",
+        image: "https://image.nongshim.com/non/pro/1653457953255.jpg"
     },
     {
         name: "Buldak Bokkeum Myeon",
         flavor: "Extremely spicy chicken",
         spice: "extreme",
         rating: 4.7,
-        description: "Viral Korean fire noodle challenge ramen.",
-        image: "https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&q=80&w=800"
+        description: "Viral Korean fire noodle challenge ramen. No soup, just intense heat.",
+        image: "https://www.samyangfoods.com/upload/product/202107/20210722104523311021.png"
     },
     {
         name: "Jin Ramen (Mild)",
         flavor: "Mild beef broth",
         spice: "mild",
         rating: 4.4,
-        description: "Balanced flavor loved by many Koreans.",
-        image: "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&q=80&w=800"
+        description: "Balanced flavor loved by many Koreans. Great for those who prefer less heat.",
+        image: "https://ottogi.co.kr/pds/product/2023-05-18_723303666.jpg"
     },
     {
         name: "Neoguri",
         flavor: "Spicy seafood broth",
         spice: "spicy",
         rating: 4.5,
-        description: "Famous for thick noodles and seafood taste.",
-        image: "https://images.unsplash.com/photo-1612927601601-6638404737ce?auto=format&fit=crop&q=80&w=800"
+        description: "Famous for thick, udon-style noodles and a real piece of kelp inside.",
+        image: "https://image.nongshim.com/non/pro/1653460490722.jpg"
     },
     {
         name: "Samyang Ramen",
-        flavor: "Classic spicy broth",
+        flavor: "Classic ham & beef broth",
         spice: "medium",
         rating: 4.2,
-        description: "One of Korea’s oldest ramen brands.",
-        image: "https://images.unsplash.com/photo-1585032226651-759b368d7246?auto=format&fit=crop&q=80&w=800"
+        description: "Korea’s first instant ramen. Features a nostalgic, savory ham flavor.",
+        image: "https://www.samyangfoods.com/upload/product/202107/20210721163457173001.png"
+    },
+    {
+        name: "Jjapaghetti",
+        flavor: "Black bean sauce (Chajang)",
+        spice: "mild",
+        rating: 4.9,
+        description: "Sweet and savory black bean noodles. A must-try non-spicy option.",
+        image: "https://image.nongshim.com/non/pro/1653458285521.jpg"
+    },
+    {
+        name: "Paldo Bibimmyeon",
+        flavor: "Sweet and sour spicy cold noodles",
+        spice: "medium",
+        rating: 4.6,
+        description: "Served cold! Perfect for summer with a refreshing apple-infused spicy sauce.",
+        image: "https://paldofood.co.kr/pds/product/2021-03-24_112001.png"
+    },
+    {
+        name: "Ansungtangmyun",
+        flavor: "Savory miso-beef broth",
+        spice: "medium",
+        rating: 4.3,
+        description: "Known for its 'comfortable' taste. Great for adding your own ingredients.",
+        image: "https://image.nongshim.com/non/pro/1653459146592.jpg"
+    },
+    {
+        name: "Yukgaejang (Cup)",
+        flavor: "Traditional spicy beef soup",
+        spice: "medium",
+        rating: 4.5,
+        description: "The best-selling cup ramen in Korea. Famous for its thin, springy noodles.",
+        image: "https://image.nongshim.com/non/pro/1653459846383.jpg"
+    },
+    {
+        name: "Sesame Ramen",
+        flavor: "Spicy sesame with egg block",
+        spice: "spicy",
+        rating: 4.7,
+        description: "Comes with a savory sesame oil and an egg block for a rich, nutty flavor.",
+        image: "https://ottogi.co.kr/pds/product/2023-05-18_722830846.jpg"
     }
 ];
 
