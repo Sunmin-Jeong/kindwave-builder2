@@ -1,33 +1,34 @@
-# Lotto Number Generator - Project Blueprint
+# Korean Convenience Store Ramen Guide - Project Blueprint
 
 ## Project Overview
-A clean, modern web application that generates random lotto numbers (1-45) and maintains a history of generated sets.
+A single-page static website designed for foreign tourists visiting Korea, helping them discover and choose popular instant ramen available in local convenience stores (GS25, CU, 7-Eleven).
 
 ## Features
-- **Random Number Generation**: Generates 6 unique numbers between 1 and 45.
-- **Sorted Display**: Numbers are displayed in ascending order.
-- **History Tracking**: Keeps track of previously generated sets.
-- **Persistence**: Uses `localStorage` to save history and theme preference.
-- **Theme Switching**: Support for Light Mode and Dark Mode.
+- **Curated Ramen List**: Highlights top-selling ramen with details like flavor, spice level, and rating.
+- **Spice Level Filter**: Interactive JavaScript filter to sort ramen by Mild, Medium, Spicy, and Extreme levels.
+- **Responsive Design**: Mobile-friendly, card-based UI for easy browsing on the go.
+- **Visual Appeal**: High-quality images (via Unsplash placeholders) and clear typography.
 
-## Design
-- **Typography**: Roboto font for a clean, professional look.
-- **Color Palette**: 
-  - Primary: #4CAF50 (Green)
-  - Secondary: #FFC107 (Amber)
-  - Light Background: #f0f0f0
-  - Dark Background: #1a1a1a
-- **Interactivity**: 
-  - Hover effects on numbers.
-  - Smooth transitions between themes.
-  - Responsive design for mobile and desktop.
+## Design Language
+- **Theme**: Modern, clean, and appetizing.
+- **Colors**:
+  - Primary: #E63946 (Red - synonymous with ramen)
+  - Background: #F8F9FA (Light Gray)
+  - Text: #1D3557 (Deep Navy)
+- **UI Components**: 
+  - Responsive grid for ramen cards.
+  - Hover effects on cards for interactivity.
+  - Color-coded spice level badges.
 
 ## Technical Implementation
 - **HTML5**: Semantic structure.
-- **CSS3**: CSS Variables for easy theming, Flexbox for layout.
-- **JavaScript**: Vanilla JS for logic, DOM manipulation, and `localStorage`.
+- **CSS3**: Flexbox, CSS Grid, and responsive media queries.
+- **Vanilla JavaScript**: 
+  - Dynamic card rendering from a data array.
+  - State management for the spice level filter.
+  - Star rating generator function.
 
 ## Recent Updates
-- Added theme toggle (Light/Dark mode).
-- Implemented persistent theme settings.
-- Updated styles for better accessibility in both modes.
+- Initial release of the "Best Korean Convenience Store Ramen Guide".
+- Implemented core filtering logic and responsive grid.
+- Added SEO-friendly meta tags and accessible image alt text.

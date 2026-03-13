@@ -3,66 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS Travel Map Korea | Official ARMY Guide</title>
-    <meta name="description" content="The ultimate travel guide for BTS fans visiting Korea. Find filming locations, HYBE HQ, and plan your ARMY trip.">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Best Korean Convenience Store Ramen Guide</title>
+    <meta name="description" content="Discover the best Korean instant ramen at convenience stores like GS25, CU, and 7-Eleven.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav>
-            <a href="index.html" class="logo">BTS TRAVEL MAP</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="map.html">Map</a></li>
-                <li><a href="locations.html">Locations</a></li>
-                <li><a href="routes.html">Routes</a></li>
-                <li><a href="transport.html">Transport</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Best Korean Convenience Store Ramen</h1>
+            <p class="subtitle">Top instant ramen to try in Korean convenience stores like <strong>GS25</strong>, <strong>CU</strong>, and <strong>7-Eleven</strong>.</p>
+        </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <h1>Welcome, ARMY!</h1>
-            <p>Explore the iconic locations in Korea that shaped the journey of BTS. Your dream trip starts here.</p>
+    <main class="container">
+        <section class="filter-section">
+            <p>Filter by Spice Level:</p>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="mild">Mild</button>
+                <button class="filter-btn" data-filter="medium">Medium</button>
+                <button class="filter-btn" data-filter="spicy">Spicy</button>
+                <button class="filter-btn" data-filter="extreme">Extreme</button>
+            </div>
         </section>
 
-        <section class="container">
-            <h2 style="text-align: center; color: var(--primary-color); font-size: 2.5rem;">Explore Korea with BTS</h2>
-            <p style="text-align: center; margin-bottom: 3rem;">Find the best spots, from the busy streets of Seoul to the peaceful beaches of Gangneung.</p>
-            
-            <div class="grid">
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1619983081563-430f63602796?auto=format&fit=crop&q=80&w=800" alt="HYBE HQ">
-                    <div class="card-content">
-                        <h3>Interactive Map</h3>
-                        <p>Locate all BTS-related spots on our interactive Google Map with custom markers.</p>
-                        <a href="map.html" class="btn">View Map</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1546412414-e1885261bb9b?auto=format&fit=crop&q=80&w=800" alt="Seoul BTS Spots">
-                    <div class="card-content">
-                        <h3>Top Locations</h3>
-                        <p>Detailed guides for HYBE HQ, Seoul Forest, and many more iconic filming sites.</p>
-                        <a href="locations.html" class="btn">Explore Spots</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="https://images.unsplash.com/photo-1594911772125-07fc7a2d8d9f?auto=format&fit=crop&q=80&w=800" alt="Travel Routes">
-                    <div class="card-content">
-                        <h3>Travel Routes</h3>
-                        <p>Carefully planned 1-day and 2-day itineraries to make the most of your trip.</p>
-                        <a href="routes.html" class="btn">See Routes</a>
-                    </div>
-                </div>
-            </div>
+        <section id="ramen-grid" class="ramen-grid">
+            <!-- Ramen cards will be injected here by JavaScript -->
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 BTS Travel Map Korea. All rights reserved for ARMY.</p>
+        <div class="container">
+            <p>Korean Convenience Store Ramen Guide for International Visitors</p>
+            <p>&copy; 2026 Ramen Guide Korea</p>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,147 +1,172 @@
-
 :root {
-    --primary-color: #4CAF50;
-    --secondary-color: #FFC107;
-    --background-color: #f0f0f0;
-    --text-color: #333;
-    --container-bg: #fff;
-    --history-item-bg: #f9f9f9;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    --btn-shadow: rgba(76, 175, 80, 0.4);
-}
-
-[data-theme="dark"] {
-    --background-color: #1a1a1a;
-    --text-color: #f0f0f0;
-    --container-bg: #2d2d2d;
-    --history-item-bg: #3d3d3d;
-    --shadow-color: rgba(0, 0, 0, 0.3);
-    --btn-shadow: rgba(76, 175, 80, 0.2);
+    --primary-color: #E63946;
+    --background-color: #F8F9FA;
+    --card-bg: #FFFFFF;
+    --text-color: #1D3557;
+    --secondary-text: #457B9D;
+    --shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    --spice-mild: #4CAF50;
+    --spice-medium: #FFC107;
+    --spice-spicy: #FF9800;
+    --spice-extreme: #F44336;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
     background-color: var(--background-color);
     color: var(--text-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-    transition: background-color 0.3s, color 0.3s;
+    line-height: 1.6;
 }
 
 .container {
-    background-color: var(--container-bg);
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px var(--shadow-color);
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--card-bg);
+    padding: 3rem 0;
     text-align: center;
-    max-width: 500px;
-    width: 90%;
-    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
-.theme-toggle {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-#theme-btn {
-    background: none;
-    border: 2px solid var(--primary-color);
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
     color: var(--primary-color);
-    padding: 0.5rem 1rem;
-    border-radius: 20px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    color: var(--secondary-text);
+    max-width: 600px;
+    margin: 1rem auto 0;
+}
+
+.filter-section {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.filter-btn {
+    padding: 0.6rem 1.2rem;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 25px;
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
-#theme-btn:hover {
+.filter-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.filter-btn.active {
     background-color: var(--primary-color);
     color: white;
+    border-color: var(--primary-color);
 }
 
-h1 {
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-    font-weight: 700;
+.ramen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 5rem;
 }
 
-.lotto-numbers {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 2rem;
-}
-
-.number {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: var(--secondary-color);
-    color: #333; /* Keep number text dark for contrast */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    box-shadow: 0 4px 10px var(--shadow-color);
+.ramen-card {
+    background: var(--card-bg);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
-.number:hover {
+.ramen-card:hover {
     transform: translateY(-5px);
 }
 
-#generate-btn {
-    background-color: var(--primary-color);
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.3s, box-shadow 0.3s;
-    box-shadow: 0 4px 15px var(--btn-shadow);
+.ramen-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-#generate-btn:hover {
-    background-color: #45a049;
-    box-shadow: 0 6px 20px var(--btn-shadow);
-}
-
-.history {
-    margin-top: 2rem;
-    text-align: left;
-}
-
-h2 {
-    color: var(--primary-color);
-    border-bottom: 2px solid var(--primary-color);
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-#history-list {
-    list-style: none;
-    padding: 0;
-    max-height: 200px;
-    overflow-y: auto;
-}
-
-#history-list li {
-    background-color: var(--history-item-bg);
-    padding: 0.75rem;
-    border-radius: 5px;
-    margin-bottom: 0.5rem;
+.card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 1rem;
-    transition: background-color 0.3s;
+    flex-direction: column;
+}
+
+.ramen-card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+}
+
+.flavor {
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+    margin-bottom: 10px;
+}
+
+.rating {
+    color: #FFD700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.spice-level {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.spice-mild { background-color: var(--spice-mild); }
+.spice-medium { background-color: var(--spice-medium); }
+.spice-spicy { background-color: var(--spice-spicy); }
+.spice-extreme { background-color: var(--spice-extreme); }
+
+.description {
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: auto;
+}
+
+footer {
+    background: var(--text-color);
+    color: white;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    opacity: 0.8;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
 }
