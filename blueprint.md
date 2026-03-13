@@ -6,6 +6,7 @@ A single-page static website designed for foreign tourists visiting Korea, helpi
 ## Features
 - **Curated Ramen List**: Highlights top-selling ramen with details like flavor, spice level, and rating.
 - **Spice Level Filter**: Interactive JavaScript filter to sort ramen by Mild, Medium, Spicy, and Extreme levels.
+- **Partnership Inquiry**: A contact form integrated with Formspree for business inquiries.
 - **Responsive Design**: Mobile-friendly, card-based UI for easy browsing on the go.
 - **Visual Appeal**: High-quality images (via Unsplash placeholders) and clear typography.
 

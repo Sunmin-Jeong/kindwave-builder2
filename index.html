@@ -31,6 +31,28 @@
         <section id="ramen-grid" class="ramen-grid">
             <!-- Ramen cards will be injected here by JavaScript -->
         </section>
+
+        <section class="inquiry-section">
+            <div class="inquiry-card">
+                <h2>Partnership Inquiry</h2>
+                <p>Are you interested in collaborating with us? Send us an inquiry!</p>
+                <form action="https://formspree.io/f/xyknjqvr" method="POST" class="inquiry-form">
+                    <div class="form-group">
+                        <label for="name">Name / Company</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name or company" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Inquiry Details</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us more about your partnership idea" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
