@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Locations Korea | ARMY Must-Visit Spots</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">BTS TRAVEL MAP</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="routes.html">Routes</a></li>
+                <li><a href="transport.html">Transport</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 style="color: var(--primary-color);">Top BTS Locations</h1>
+        <p>Discover the most iconic spots in Korea for any BTS fan. Each location holds a special story in the journey of BTS.</p>
+        
+        <div id="locations-grid" class="grid" style="margin-top: 2rem;">
+            <!-- Script will populate this -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BTS Travel Map Korea. All rights reserved for ARMY.</p>
+    </footer>
+
+    <script type="module">
+        import btsLocations from './js/data.js';
+        const grid = document.getElementById('locations-grid');
+        btsLocations.forEach(loc => {
+            const card = document.createElement('div');
+            card.className = 'card';
+            card.innerHTML = `
+                <img src="${loc.photo}" alt="${loc.name}">
+                <div class="card-content">
+                    <h3>${loc.name}</h3>
+                    <p>${loc.description}</p>
+                    <p><strong>Address:</strong> ${loc.address}</p>
+                    <a href="${loc.googleMapsLink}" target="_blank" class="btn">Directions</a>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+    </script>
+</body>
+</html>
